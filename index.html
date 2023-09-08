@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+      <div class="container">
+      <div class="head">
+       <h1>Password Generator</h1>
+      </div>
+      <div class="display">
+      <input type="text" placeholder="Password" class="passwordDis">
+       <button class="iconbutton">
+         <img src="./img.svg" alt="copy" id="f" width="24" height="24" />
+        </button>
+      </div>
+      <div class="main">
+        <div class="len">
+            <div class="lenpass">Password Length</div>
+            <div class="displaLength"><p class="length"> 5</p></div>
+        </div>
+        <div class="slider"> 
+            <input type="range" min="1" max="20" id="myRange">
+         </div>
+        <div class="inputboxes">
+            <input type="checkbox" class="upperCase">
+            <label for="check1">Include Uppercase Only</label><br>
+            </div>
+            <div class="inputboxes">
+            <input type="checkbox" class="lowerCase">
+            <label for="check2">Include Lowercase Only</label><br>
+          </div>
+            <div class="inputboxes">
+            <input type="checkbox" class="numbers">
+            <label for="check3">Include Numbers</label><br>
+          </div>
+            <div class="inputboxes">
+            <input type="checkbox" class="symbols">
+            <label for="check4">Include symbols</label>
+        </div>
+        <div class="strength">
+         <p>Strength</p>
+         <div class="dataindicator"></div>
+        </div>
+        <div class="button1">
+          <button class="generatebtn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
